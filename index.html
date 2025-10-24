@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marek Kmec • Spojená škola, Kollárova 17, Sečovce</title>
+<meta name="description" content="Osobná stránka Mareka Kmeca, študenta odboru Informačné a sieťové technológie – prax: Lekos">
+<style>
+body{
+font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+margin:0;
+color:white;
+background:linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+min-height:100vh;
+}
+header{background:rgba(255,255,255,0.1);padding:28px 20px;border-bottom:1px solid rgba(255,255,255,0.2)}
+.container{max-width:980px;margin:24px auto;padding:0 20px}
+.hero{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.avatar{width:120px;height:120px;border-radius:12px;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:40px;flex-shrink:0}
+h1{margin:0;font-size:32px}
+p.lead{color:#e0e7ff;margin-top:6px;max-width:600px}
+.logos{display:flex;gap:12px;align-items:center;margin-top:10px}
+.logos img{height:60px; border-radius:8px;}
+section{background:rgba(255,255,255,0.15);border-radius:12px;padding:20px;margin-top:18px;backdrop-filter:blur(6px)}
+ul{padding-left:18px}
+footer{text-align:center;color:#e0e7ff;font-size:14px;margin:28px 0}
+@media (max-width:920px){.avatar{width:96px;height:96px;font-size:32px}}
+</style>
+</head>
+<body>
+
+
+<header>
+<div class="container hero">
+<div class="avatar">M</div>
+<div>
+<h1>Marek Kmec</h1>
+<p class="lead">Študent odboru <strong>Informačné a sieťové technológie</strong> na <strong>Spojenej škole, Kollárova 17, Sečovce</strong>, žiak <strong>III.T</strong>.</p>
+<div class="logos">
+<img src="skola-logo.png" alt="Logo školy">
+<img src="lekos-logo.png" alt="Logo Lekos">
+</div>
+</div>
+</div>
+</header>
+
+
+<main class="container">
+<section>
+<h2>O odbore</h2>
+<p>Na škole sa vyučuje:</p>
+<ul>
+<li>Programovanie</li>
+<li>Elektrotechnika</li>
+<li>Počítačové siete</li>
+<li>Konfigurácia routerov a switchov</li>
+<li>Správa operačných systémov (Linux, Windows Server)</li>
+<li>Bezpečnosť sietí</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Praxe – Lekos</h2>
+<p>Počas praxe v spoločnosti <strong>Lekos</strong> sa venujeme <strong>všestranným činnostiam</strong> – od konfigurácie zariadení, práce so softvérom, až po údržbu a servis techniky.</p>
+</section>
+
+
+<footer>
+<p>© <span id="year"></span> Marek Kmec — Spojená škola, Kollárova 17, Sečovce</p>
+</footer>
+</main>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
+</body>
+</html>
